@@ -9,6 +9,8 @@ html, body {
 
 body {
   font: 20px Georgia, serif;
+  color: #333333;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVQYV2NkIAJcuHDBh5GQOpAiAwODLXgVwhSBDMOpEFkRToXoirAqxKYIQyEuRSgK8SmCKySkCKyQGEUghQARMybHXwVFoQAAAABJRU5ErkJggg==) repeat;
   background-color: #F4F4F4;
 }
 
@@ -111,6 +113,6 @@ article {
 
 .circle {
   border-radius: 300px;
-  border: 1px solid #ececec;
+  border: 5px solid #ececec;
   overflow: hidden;
 }
