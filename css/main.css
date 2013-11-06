@@ -101,6 +101,14 @@ article {
   float: left;
 }
 
+.column-4 {
+  width: 20%;
+  margin-left: 4%;
+  float: left;
+}
+
+
+
 .image {
   width: 300px;
   height: 300px;
