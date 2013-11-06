@@ -1,0 +1,116 @@
+body, h1, h2, h3, h4, h5, h6, p, span, div, ul, li, table {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font: 20px Georgia, serif;
+  background-color: #F4F4F4;
+}
+
+p {
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+
+a {
+  color: #29A5BC;
+  text-decoration: none;
+  border-bottom: 1px solid #29A5BC;
+
+  -webkit-transition: all ease-out .25s;
+     -moz-transition: all ease-out .25s;
+       -o-transition: all ease-out .25s;
+          transition: all ease-out .25s;
+
+}
+
+a:hover {
+  color: black;
+  border-bottom-color: black;
+}
+
+h1, h2, h3 {
+  color: #333333;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 40px 0;
+}
+
+h2 {
+  font-size: 35px;
+  margin: 40px 0;
+  line-height: 45px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+h2 + h1 {
+  margin-top: 0;
+}
+
+.quote {
+  margin-bottom: 20px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+article {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.narrow {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.broad {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.columns:after {
+  width: 100%;
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.column-2 {
+  width: 40%;
+  float: left;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.circle {
+  border-radius: 300px;
+  border: 1px solid #ececec;
+  overflow: hidden;
+}
