@@ -1,0 +1,24 @@
+---
+layout: default
+title: Posts
+---
+
+<section>
+
+	<div class="broad">
+		<h2>Here are some of my thoughts about a few things;</h2>
+	</div>
+
+	<div class="narrow">
+
+		<ul>
+			{% for post in site.posts %}
+				<li>
+					<a href="{{ post.url }}">{{ post.title }}</a>
+				</li>
+			{% endfor %}
+		</ul>
+
+	</div>
+
+</section>
