@@ -19,9 +19,36 @@
     </head>
     <body>
 
+        <nav>
+
+            <h1>Joshua de Lange</h1>
+
+            <ul>
+                <li><a href="/">About</a></li>
+                <li><a href="/posts/">Thoughts</a></li>
+            </ul>
+
+            <div class="clearfix"></div>
+
+        </nav>
+
         <article>
 
-            {{ content }}
+            <div class="right{% if page.cover %} hasCover{% endif %}">
+
+                {% if page.cover %}
+
+                    <img src="images/{{ page.cover }}.jpg" alt="Joshua de Lange">
+
+                {% endif %}
+
+            </div>
+
+            <div class="left">
+
+                {{ content }}
+
+            </div>
 
         </article>
 
