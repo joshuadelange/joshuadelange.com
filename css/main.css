@@ -71,6 +71,10 @@ body {
   padding-top: 3%;
 }
 
+.left.full-width {
+  width: 100%;
+}
+
 @media(max-width: 860px){
   .right {
     position: relative;
@@ -162,6 +166,13 @@ h2 {
   line-height: 45px;
 }
 
+h2.italics {
+  margin-bottom: 20px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+
 @media(max-width: 450px) {
   h1 {
     font-size: 35px;
@@ -190,16 +201,14 @@ article ul li {
   margin-bottom: 10px;
 }
 
-.quote {
-  margin-bottom: 20px;
-  font-weight: 100;
-  font-style: italic;
-}
-
 nav {
   width: 50%;
   background-color: #333;
   padding: 10px;
+}
+
+nav.full-width {
+  width: 100%;
 }
 
 @media(max-width: 860px){
@@ -260,14 +269,34 @@ section {
   z-index: 10;
 }
 
+section div {
+  margin-bottom: 75px;
+}
+
 .narrow {
   max-width: 400px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left.full-width .narrow {
+  max-width: 600px
 }
 
 .broad {
   max-width: 600px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left.full-width .broad {
+  max-width: 800px;
+}
+
+.wide {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media(max-width: 630px){
@@ -302,14 +331,11 @@ section {
   float: left;
 }
 
-.image {
-  width: 400px;
-  height: 400px;
-}
-
-.image img {
+.narrow img, .broad img, .wide img {
   width: 100%;
   height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .circle {
@@ -320,4 +346,32 @@ section {
 .date {
   text-align: center;
   font-style: italic;
+  color: #9C9C9C;
+}
+
+h1 + .date {
+  margin-top: -30px;
+  margin-bottom: 60px;
+}
+
+.quote {
+  font-size: 35px;
+  font-style: italic;
+  letter-spacing: 1px;
+  line-height: 40px;
+}
+
+.quote-author, .caption, .comment {
+  font-style: italic;
+  margin-top: -15px;
+  margin-bottom: 60px;
+}
+
+.caption {
+  margin-top: -45px;
+}
+
+.comment {
+  margin-top: -5px;
+  text-align: center;
 }

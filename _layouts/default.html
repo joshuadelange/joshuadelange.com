@@ -19,7 +19,7 @@
     </head>
     <body>
 
-        <nav>
+        <nav{% unless page.cover %} class="full-width"{% endunless %}>
 
             <h1>Joshua de Lange</h1>
 
@@ -34,17 +34,20 @@
 
         <article>
 
-            <div class="right{% if page.cover %} hasCover{% endif %}">
+            {% if page.cover %}
 
-                {% if page.cover %}
+                <div class="right">
 
-                    <img src="images/{{ page.cover }}.jpg" alt="Joshua de Lange">
+                    {% if page.cover %}
 
-                {% endif %}
+                        <img src="images/{{ page.cover }}.jpg" alt="Joshua de Lange">
 
-            </div>
+                    {% endif %}
 
-            <div class="left">
+                </div>
+            {% endif %}
+
+            <div class="left{% unless page.cover %} full-width{% endunless %}">
 
                 {{ content }}
 
