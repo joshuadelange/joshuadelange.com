@@ -104,7 +104,7 @@ body {
 p {
   font-size: 24px;
   line-height: 32px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 ul {
@@ -202,17 +202,17 @@ article ul li {
 nav {
   width: 50%;
   background-color: #333;
-  padding: 10px;
+  padding: 1%;
 }
 
 nav.full-width {
-  width: 100%;
+  width: 98%;
 }
 
 @media(max-width: 860px){
 
   nav {
-    width: 100%;
+    width: 98%;
   }
 
 }
@@ -369,7 +369,7 @@ section {
 
 h1 + .date {
   margin-top: -30px;
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
 
 .quote {
@@ -377,6 +377,11 @@ h1 + .date {
   font-style: italic;
   letter-spacing: 1px;
   line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.quote-author {
+  color: #838383;
 }
 
 .quote-author, .caption, .comment {
@@ -397,4 +402,45 @@ h1 + .date {
 
 .comment + img {
   margin-top: -40px;
+}
+
+.stat {
+  width: 33%;
+  margin-top: 0;
+  padding-top: 50px;
+  text-align: center;
+  display: inline-block;
+  font-family: "Helvetica Neue", sans-serif;
+  border-right: 1px solid silver;
+}
+
+.stat:last-of-type {
+  border-right: none;
+}
+
+.stat .big-number {
+  font-weight: 100;
+  font-size: 70px;
+}
+
+.stat .big-number + .label {
+  font-weight: 200;
+  line-height: 10px;
+  font-style: italic;
+}
+
+@media(max-width: 630px){
+  .stat {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid silver;
+  }
+
+  .stat:first-of-type {
+    padding-top: 0;
+  }
+
+  .stat:last-of-type {
+    border-bottom: none;
+  }
 }
