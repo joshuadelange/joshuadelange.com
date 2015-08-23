@@ -21,41 +21,7 @@
     </head>
     <body>
 
-        <nav{% unless page.cover %} class="full-width"{% endunless %}>
-
-            <h1><a href="{{ site.baseurl }}">Joshua de Lange</a></h1>
-
-            <ul>
-                <li><a href="{{ site.baseurl }}">About</a></li>
-                <li><a href="{{ site.baseurl }}/posts/">Thoughts</a></li>
-            </ul>
-
-            <div class="clearfix"></div>
-
-        </nav>
-
-        <article>
-
-            {% if page.cover %}
-
-                <div class="right">
-
-                    {% if page.cover %}
-
-                        <img src="{{ site.baseurl }}/images/{{ page.cover }}.jpg" alt="Joshua de Lange">
-
-                    {% endif %}
-
-                </div>
-            {% endif %}
-
-            <div class="left{% unless page.cover %} full-width{% endunless %}">
-
-                {{ content }}
-
-            </div>
-
-        </article>
+        <article>{{ content }}</article>
 
         <script src="/js/main.js"></script>
 
