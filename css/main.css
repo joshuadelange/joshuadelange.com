@@ -33,6 +33,11 @@ section.bordered:last-child {
   margin-bottom: 0;
 }
 
+section img {
+  width: 110%;
+  margin-left: -30px;
+}
+
 /* TYPOGRAPHY STUFF */
 h1 {
   margin: 0;
@@ -43,7 +48,7 @@ h1 {
   color: #3B3B3B;
 }
 
-h2 {
+h2, h3 {
   font-size: 20px;
   font-weight: 100;
   color: #3B3B3B;
@@ -139,7 +144,8 @@ ul.inline li {
 
 .caption {
   text-align: center;
-  margin-top: -45px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .comment {
@@ -154,11 +160,16 @@ ul.inline li {
 .stat {
   width: 33%;
   margin-top: 0;
+  margin-bottom: 20px;
   padding-top: 50px;
   text-align: center;
   display: inline-block;
   font-family: "Helvetica Neue", sans-serif;
   border-right: 1px solid silver;
+}
+
+.stat:first-of-type {
+  margin-left: -30px;
 }
 
 .stat:last-of-type {
