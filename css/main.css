@@ -18,14 +18,18 @@ body {
 /* LEZ GET INTO LAYOUT! :D */
 article {
   padding: 30px;
+  padding-bottom: 60px;
   width: 600px;
   background-color: #fff;
+}
+
+section {
+  margin-bottom: 40px;
 }
 
 section.bordered {
   border-left: 3px solid #008EE0;
   padding-left: 20px;
-  margin-bottom: 40px;
   padding-right: 90px;
 }
 
